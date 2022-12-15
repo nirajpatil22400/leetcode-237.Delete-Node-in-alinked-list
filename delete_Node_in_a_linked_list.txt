@@ -1,0 +1,12 @@
+237.Delete Node in alinked list:
+
+Solution :
+        
+        Public Static deleteNode(ListNode node)
+        {
+           //Now i am standing at the Node previous
+           // to the Node to be deleted.
+
+           node.val= node.next.val;
+           node.next = node.next.next;
+        }
